@@ -1,7 +1,7 @@
 -- Breakables.lua
 local Breakables = {}
 local ws = game:GetService("Workspace")
-local Zones = require(script.Parent.Zones)
+local Zones = loadstreing("yada")
 
 function Breakables.getBreakables(hrpPosition, allowedZones, radius)
     local breakables = {}
