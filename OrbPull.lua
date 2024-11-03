@@ -6,6 +6,7 @@ getgenv().flags = getgenv().flags or {}
 getgenv().flags.orbPull = true
 getgenv().coroutines = getgenv().coroutines or {}
 
+local orbType = nil -- this is the orbtype fr, idk how to use this
 local radius = nil -- Set to a number (e.g., 50) for a specific distance or nil for no restriction
 
 local function pullOrbs(orbType, radius)
@@ -21,7 +22,7 @@ local function pullOrbs(orbType, radius)
 end
 
 getgenv().coroutines.orbPull = coroutine.create(function()
-    pullOrbs(nil, radius)
+    pullOrbs(orbType, radius)
 end)
 
 coroutine.resume(getgenv().coroutines.orbPull)
