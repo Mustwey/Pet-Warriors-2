@@ -1,4 +1,3 @@
--- Zones.lua
 local Zones = {}
 local ws = game:GetService("Workspace")
 
