@@ -2,6 +2,7 @@ local ws = game:GetService("Workspace")
 local lp = game.Players.LocalPlayer
 local hrp = lp.Character:WaitForChild("HumanoidRootPart")
 
+getgenv().flags = getgenv().flags or {}
 getgenv().flags.orbPull = true
 getgenv().coroutines = getgenv().coroutines or {}
 
